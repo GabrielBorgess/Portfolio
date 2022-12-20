@@ -7,15 +7,23 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background-image: url('img/bg0p3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 section#main{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/img/bgop2flipped.png');
+    /* background-image: url('/img/bg0p3.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 section#main .container{
@@ -27,7 +35,7 @@ section#main .container{
 }
 
 section#main .container h5{
-    color: #e28b50;
+    color: #ED7A3C;
     font-size: 1.4rem;
     font-weight: 300;
     font-style: normal;
@@ -53,10 +61,26 @@ section#main .container p{
 section#main .container button{
     color: white;
     background-color: transparent;
+    position: relative;
     padding: 15px 50px;
-    border-color: #e28b50;
+    border-color: #ED7A3C;
     text-decoration: none;
     font-size: 1rem;
+    transition: .500s ease all;
+    overflow: hidden;
+}
+
+section#main .container button:hover, section#main .container button:focus{
+    cursor: pointer;
+	transform: translate(-4px, -4px);
+	color: rgb(255, 255, 255);
+}
+
+.clicked{
+    cursor: pointer;
+	transform: translate(3px, 3px);
+	box-shadow: 0px 0px 0px rgba(#ffffff, 1);
+	border: 1px solid rgba(#ffffff, 0.5);
 }
 
 div.container .links{
@@ -64,10 +88,155 @@ div.container .links{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 250px;
+    width: 190px;
 }
 
 div.container .links .icons{
-    max-height: 40px;
+    height: 40px;
+    transition: all .5s ease-in-out;
 }
 
+div.container .links .icons:hover{
+    transform: scale(1.1);
+}
+
+/* about section */
+
+section#About{
+    height: auto;
+    /* background-color: #0A0909; */
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#About .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#About .container h1{
+    font-weight: 200;
+    font-size: 2.5rem;
+    padding-top: 60px;
+    color: #d1d1d1;
+    padding-bottom: 60px;
+}
+
+section#About .container h1 span{
+    color: #7a7a7a;
+    font-size: 3.8rem;
+}
+
+section#About .container .about-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 50px;
+    padding-bottom: 60px;
+}
+
+section#About .container img{
+    max-height: 350px;
+}
+
+.text-and-button{
+    max-width: 40%;
+}
+
+.text-and-button p{
+    line-height: 2rem;
+    padding-bottom: 40px;
+    color: #e7e7e7;
+}
+
+.text-and-button button{
+    border: none;
+    background-color: transparent;
+    color: #e7e7e7;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+}
+
+.text-and-button button:hover{
+    transform: scale(1.1); 
+}
+
+/* end About section */
+
+/* projects section */
+
+section#Projects .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+section#Projects .container h1{
+    font-weight: 200;
+    font-size: 2.5rem;
+    padding-top: 60px;
+    color: #d1d1d1;
+    padding-bottom: 60px;
+}
+
+section#Projects .container .content{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+}
+
+section#Projects .container .project-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+}
+
+.project-info h2{
+    font-size: 1.5rem;
+    color: #e7e7e7;
+    padding-bottom: 20px;
+}
+
+.project-info p{
+    line-height: 2rem;
+    padding-bottom: 40px;
+    color: #e7e7e7;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons button{
+    padding-right: 20px;
+    border: none;
+    background-color: transparent;
+    color: #e7e7e7;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .4s ease-in-out; 
+}
+
+.buttons button:hover{
+    color: #7a7a7a;
+}
+
+section#Projects .container h1 span{
+    color: #7a7a7a;
+    font-size: 3.8rem;
+}
+
+section#Projects .container img{ 
+    max-height: 350px;
+}
+
+/* end of project section */

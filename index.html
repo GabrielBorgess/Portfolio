@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
     <header>
@@ -17,17 +16,65 @@
             <h5>HELLO, WORLD</h5>
             <h1>I'm Gabriel Borges</h1>
             <p>| FULL STACK WEB DEVELOPER |</p>
-            <a href=""><button>LEARN MORE <i class="fa-solid fa-sort-down"></i></button></a>
+            <a href=""><button class="clicked">LEARN MORE <i class="fa-solid fa-sort-down"></i></button></a>
             <div class="links">
-                <a href=""><img class="icons" src="img/linkedin-icon-1-logo-pack/linkedin-icon-1-logo-svg-white.png" alt=""></a>
-                <a href=""><img class="icons" src="img/linkedin-icon-1-logo-pack/linkedin-icon-1-logo-svg-white.png" alt=""></a>
-                <a href=""><img class="icons" src="img/linkedin-icon-1-logo-pack/linkedin-icon-1-logo-svg-white.png" alt=""></a>
-                <a href=""><img class="icons" src="img/linkedin-icon-1-logo-pack/linkedin-icon-1-logo-svg-white.png" alt=""></a>
+                <a href=""><img class="icons" src="img/linkedinwhite.png" alt=""></a>
+                <a href=""><img class="icons" src="img/github.png" alt=""></a>
+                <a href=""><img class="icons" src="img/email.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="container">
+            <h1><span>01. </span>ABOUT ME</h1>
+            <div class="about-wrapper">
+                <div class="text-and-button">
+                    <p>This is the ‘About’ page. Where you should find an amazing story about who we are and what we do. Maybe it should start like this: “Gothamsiti is a digital and communication agency located in…”. Or like this: “We are a bunch of young talented people…”. Then, there should be something memorable like “We think different” or “What joins us is to be unique”. Stuff like this. A couple of lists with funny little icons telling the services we offer, some images of our offices, with very cool lights and with no empty bottles on the tables.</p>
+                    <button>Download Resume</button>
+                </div>
+                <img src="img/me2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects">
+        <div class="container">
+            <h1><span>02. </span>PROJECTS</h1>
+            <div class="content">
+                <div class="project-info">
+                    <h2>GoKidz!</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, 
+                        ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis 
+                        fuga numquam voluptate ex architecto itaque molestiae.
+                    </p>
+                    <div class="buttons">
+                        <button>See live</button>
+                        <button>Source Code</button>
+                    </div>
+                </div>
+                <span data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"><img src="img/Gokidz.png" alt=""></span>
+            </div>
+            <div class="content">
+                <div class="project-info">
+                    <h2>GoKidz!</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, 
+                        ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis 
+                        fuga numquam voluptate ex architecto itaque molestiae.
+                    </p>
+                    <div class="buttons">
+                        <button>See live</button>
+                        <button>Source Code</button>
+                    </div>
+                </div>
+                <span data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"><img src="img/Gokidz.png" alt=""></span>
             </div>
         </div>
     </section>
 
     <!-- JS -->
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="tilt.jquery.js"></script>
 </body>
 </html>
